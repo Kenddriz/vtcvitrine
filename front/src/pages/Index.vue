@@ -3,7 +3,7 @@
     <q-img src="images/city_driver.svg" height="250px" />
     <q-card flat square class="bg-warning col-12">
       <q-card-section class="text-h5 text-center q-pt-lg text-white">
-        TELECHARGER VOTRE APPLICATION DE CHAUFFEUR PRIVE DISPONIBLE SUR TOUTE LA REUNION
+        TELECHARGER VOTRE APPLICATION DE CHAUFFEUR PRIVEE DISPONIBLE SUR TOUTE LA REUNION
       </q-card-section>
       <q-card-actions align="center" class="q-pb-lg">
         <DownloadLink />
