@@ -34,13 +34,17 @@
               <q-item-section avatar side>
                 <q-icon color="primary" name="event_available" />
               </q-item-section>
-              <q-item-section>Commander a l'avance</q-item-section>
+              <q-item-section>Commander à l'avance</q-item-section>
             </q-item>
             <q-item>
               <q-item-section avatar side>
                 <q-icon name="grading" color="primary" />
               </q-item-section>
-              <q-item-section>Choisissez votre voiture, Luxe ou Van ou Normal</q-item-section>
+              <q-item-section>
+                <q-item-label>
+                  Choisissez votre voiture, <b>Luxe</b> ou <b>Van</b> ou <b>Normal</b>
+                </q-item-label>
+              </q-item-section>
             </q-item>
           </q-list>
           <DownloadLink />
