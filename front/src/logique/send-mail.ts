@@ -26,7 +26,7 @@ export const useSendMail = () => {
       (message: string) => {
         if(message.toLowerCase() === 'ok') {
           Notify.create({
-            message: 'Votre email a bien été envoyé',
+            message: 'Votre email a bien été envoyé !',
             color: 'primary',
             position: 'bottom-right'
           })
