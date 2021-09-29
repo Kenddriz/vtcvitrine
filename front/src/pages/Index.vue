@@ -109,10 +109,11 @@
         control-color="primary"
       >
         <q-carousel-slide
-          v-for="x in 5"
+          v-for="x in 4"
           :name="x"
-          img-src="register.svg"
+          :img-src="`images/car${x + 2}.jpg`"
           :key="x"
+          :class="$q.screen.gt.xs ? '' : 'carousel-image'"
         />
       </q-carousel>
     </div>
@@ -133,8 +134,12 @@ export default defineComponent({
   }
 });
 </script>
-<style lang="css">
+<style lang="scss">
   .margin-top {
     margin-top: 50px;
+  }
+  .carousel-image{
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 </style>
