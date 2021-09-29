@@ -2,10 +2,19 @@
   <q-layout view="lHh Lpr lFf">
     <q-header>
       <q-toolbar class="bg-white text-dark">
-        <q-avatar class="q-ml-sm">
-          <img alt="tropik vtc" src="images/logo.jpg">
-        </q-avatar>
-        <div class="text-subtitle1 text-bold q-ml-sm">Tropik VTC</div>
+        <q-item>
+          <q-item-section side avatar>
+            <q-avatar>
+              <img alt="tropik vtc" src="images/logo.jpg">
+            </q-avatar>
+          </q-item-section>
+          <q-item-section>
+            <q-item-label class="text-subtitle1 text-bold">Tropik VTC</q-item-label>
+            <q-item-label class="text-warning" caption>
+              Déplacez-vous librement
+            </q-item-label>
+          </q-item-section>
+        </q-item>
 
         <q-space />
         <q-item-section side>
@@ -26,34 +35,39 @@
       <div class="row justify-center q-my-md q-px-sm">
         <div class="row justify-between" style="width: 100%; max-width: 1100px">
           <div class="col-xs-12 col-sm-6 row items-center justify-between">
-            <div class="col-12">
-              <div class="flex text-dark items-center">
-                <q-avatar size="40px">
-                  <img alt="tropik vtc" src="images/logo.jpg">
-                </q-avatar>
-                <span class="text-subtitle1 text-bold q-ml-md">Tropik VTC</span>
-              </div>
-              <q-list>
-                <q-item class="text-dark q-pl-none">
-                  <q-item-section side>
-                    <q-icon color="primary" name="phone" />
-                  </q-item-section>
-                  <q-item-section>
-                    <q-item-label>Assistance par téléphone</q-item-label>
-                    <q-item-label>06 92 48 57 13</q-item-label>
-                  </q-item-section>
-                </q-item>
-                <q-item class="text-dark q-pl-none">
-                  <q-item-section side>
-                    <q-icon color="primary" name="access_time" />
-                  </q-item-section>
-                  <q-item-section>
-                    <q-item-label>Disponibilité</q-item-label>
-                    <q-item-label class="text-warning">Service 24h/24 & 7jours/7</q-item-label>
-                  </q-item-section>
-                </q-item>
-              </q-list>
-            </div>
+            <q-list class="col-12">
+              <q-item class="q-pl-none">
+                <q-item-section side avatar>
+                  <q-avatar>
+                    <img alt="tropik vtc" src="images/logo.jpg">
+                  </q-avatar>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label class="text-subtitle1 text-bold text-dark">Tropik VTC</q-item-label>
+                  <q-item-label class="text-warning" caption>
+                    Déplacez-vous librement
+                  </q-item-label>
+                </q-item-section>
+              </q-item>
+              <q-item class="text-dark q-pl-none">
+                <q-item-section side>
+                  <q-icon color="primary" name="phone" />
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Assistance par téléphone</q-item-label>
+                  <q-item-label>06 92 48 57 13</q-item-label>
+                </q-item-section>
+              </q-item>
+              <q-item class="text-dark q-pl-none">
+                <q-item-section side>
+                  <q-icon color="primary" name="access_time" />
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Disponibilité</q-item-label>
+                  <q-item-label class="text-warning">Service 24h/24 & 7jours/7</q-item-label>
+                </q-item-section>
+              </q-item>
+            </q-list>
             <DownloadLink />
           </div>
           <ContactForm />
