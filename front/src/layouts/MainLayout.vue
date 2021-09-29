@@ -10,7 +10,7 @@
         <q-space />
         <q-item-section side>
           <q-item-label class="text-right text-weight-bold">06 92 48 57 13</q-item-label>
-          <q-item-label caption>Assistance par téléphone</q-item-label>
+          <q-item-label class="text-warning" caption>Assistance par téléphone</q-item-label>
         </q-item-section>
         <q-avatar>
           <img alt="tropik vtc" src="images/flag.jpg">
@@ -22,7 +22,7 @@
     </q-page-container>
 
     <q-footer class="bg-white footer" style="position: relative">
-      <q-separator inset />
+      <q-separator color="warning" inset />
       <div class="row justify-center q-my-md q-px-sm">
         <div class="row justify-between" style="width: 100%; max-width: 1100px">
           <div class="col-xs-12 col-sm-6 row items-center justify-between">
@@ -49,33 +49,17 @@
                   </q-item-section>
                   <q-item-section>
                     <q-item-label>Disponibilité</q-item-label>
-                    <q-item-label>Service 24h/24 7jours/7</q-item-label>
+                    <q-item-label class="text-warning">Service 24h/24 & 7jours/7</q-item-label>
                   </q-item-section>
                 </q-item>
               </q-list>
             </div>
             <DownloadLink />
           </div>
-          <q-form style="max-width: 400px" class="col col-xs-12 q-gutter-y-md">
-            <q-input dense rounded outlined label="Title 1" />
-            <q-input dense rounded outlined label="Title 2" />
-            <q-input dense type="textarea" rounded outlined placeholder="Message" />
-            <div class="flex justify-end">
-              <q-btn
-                icon-right="send"
-                no-caps
-                color="warning"
-                size="sm"
-                rounded
-                unelevated
-                label="Envoyer"
-                text-color="dark"
-              />
-            </div>
-          </q-form>
+          <ContactForm />
         </div>
       </div>
-      <q-separator inset />
+      <q-separator color="warning" inset />
       <div class="flex flex-center q-gutter-x-lg q-mt-md">
         <q-btn flat dense>
           <img height="40" src="images/instagram.png" />
@@ -92,10 +76,11 @@
 
 import { defineComponent } from 'vue'
 import DownloadLink from 'components/DownloadLink.vue';
+import ContactForm from 'components/ContactForm.vue';
 
 export default defineComponent({
   name: 'MainLayout',
-  components: { DownloadLink }
+  components: { DownloadLink, ContactForm }
 })
 </script>
 

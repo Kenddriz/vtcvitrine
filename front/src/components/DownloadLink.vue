@@ -3,8 +3,8 @@
     <q-card flat class="flex q-pa-xs no-wrap items-center" dark>
       <img src="images/google_play.ico" />
       <div class="col-9 q-ml-xs">
-        <div class="q-pr-xs">Télecharger dans</div>
-        <div>Google Play</div>
+        <div class="q-pr-xs">Télécharger sur</div>
+        <div>Google play</div>
       </div>
     </q-card>
 
@@ -12,7 +12,7 @@
       <img style="color: white" src="images/social_apple.png" />
       <div class="col-9 q-ml-xs">
         <div class="q-pr-xs">Télécharger dans</div>
-        <div>App Store</div>
+        <div>l'App Store</div>
       </div>
     </q-card>
   </div>

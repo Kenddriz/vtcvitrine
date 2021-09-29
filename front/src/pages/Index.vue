@@ -1,6 +1,6 @@
 <template>
   <q-page class="row justify-center">
-    <q-img src="images/city_driver.svg" height="250px" />
+    <q-img src="images/background.jpg" height="250px" />
     <q-card flat square class="bg-warning col-12">
       <q-card-section class="text-h5 text-center q-pt-lg text-white">
         TELECHARGER VOTRE APPLICATION DE CHAUFFEUR PRIVEE DISPONIBLE SUR TOUTE LA REUNION
@@ -82,7 +82,7 @@
           </q-list>
           <DownloadLink />
         </div>
-        <q-img class="col-xs-12 col-md-6" height="250px" src="images/car3.jpg" />
+        <q-img class="col-xs-12 col-md-6" height="250px" src="images/car4.jpg" />
       </div>
 
       <!--Gammes -->
