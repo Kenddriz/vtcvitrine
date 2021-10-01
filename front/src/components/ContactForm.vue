@@ -37,12 +37,18 @@
         icon-right="send"
         no-caps
         color="warning"
-        size="sm"
+        size="md"
         rounded
         unelevated
         label="Envoyer"
-        text-color="dark"
-      />
+        text-color="white"
+        :loading="loading"
+        :disable="loading"
+      >
+        <template v-slot:loading>
+          <q-spinner-bars color="white" />
+        </template>
+      </q-btn>
     </div>
   </q-form>
 </template>

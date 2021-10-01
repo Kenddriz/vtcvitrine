@@ -2,9 +2,9 @@
   <q-page class="row justify-center">
     <q-img src="images/background.jpg" height="250px" />
     <q-card flat square class="bg-warning col-12">
-      <q-card-section class="text-h5 text-center q-pt-lg text-white">
+      <h1 class="text-h5 text-center q-pt-md text-white">
         TELECHARGER VOTRE APPLICATION DE CHAUFFEUR PRIVEE DISPONIBLE SUR TOUTE LA REUNION
-      </q-card-section>
+      </h1>
       <q-card-actions align="center" class="q-pb-lg">
         <DownloadLink />
       </q-card-actions>
@@ -13,10 +13,12 @@
       <div class="row justify-around items-center">
         <div class="col-xs-12 col-md-6">
           <div class="text-h6 text-warning">COMMANDER EN QUELQUES CLICS</div>
-          <div class="q-mt-lg q-mb-sm">Télécharger l'application <b>Tropik VTC</b></div>
+          <h2 style="font-size: 12px; margin-bottom: -10px" class="q-mt-lg">
+            Télécharger l'application <b>Tropik VTC</b>
+          </h2>
           <DownloadLink />
         </div>
-        <img class="col-xs-12 col-md-6" height="250" src="city_driver.svg" />
+        <img class="col-xs-12 col-md-6" height="250" src="images/car1.jpg" />
       </div>
 
       <div class="row justify-between margin-top">

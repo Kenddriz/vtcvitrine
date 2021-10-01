@@ -43,7 +43,9 @@
                   </q-avatar>
                 </q-item-section>
                 <q-item-section>
-                  <q-item-label class="text-subtitle1 text-bold text-dark">Tropik VTC</q-item-label>
+                  <h3 style="margin: unset!important;" class="text-subtitle1 text-weight-bold text-dark">
+                    Tropik VTC
+                  </h3>
                   <q-item-label class="text-warning" caption>
                     Déplacez-vous librement
                   </q-item-label>
