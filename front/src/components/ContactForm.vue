@@ -18,7 +18,7 @@
       :model-value="inputForm.From"
       v-model="inputForm.From"
       lazy-rules
-      :rules="[val => val && val.length > 0 || 'Email invalide']"
+      :rules="[() => validMail() || 'Email invalide']"
     />
     <q-input
       :model-value="inputForm.Body"

@@ -78,7 +78,7 @@
       <q-separator color="warning" inset />
       <div class="flex flex-center q-gutter-x-lg q-mt-md">
         <q-btn flat dense>
-          <img height="40" src="images/instagram.png" />
+          <img height="40" src="images/facebook1.png" />
         </q-btn>
         <q-btn flat dense>
           <img height="40" src="images/facebook.png" />

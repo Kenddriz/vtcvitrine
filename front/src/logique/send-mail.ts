@@ -15,6 +15,10 @@ export const useSendMail = () => {
     Body: '',
     Subject: 'Tropik vtc'
   });
+  function validMail() {
+    const regExp = /^[^\s()<>@,;:\/]+@\w[\w.-]+\.[a-z]{2,}$/i;
+    return regExp.test(inputForm.From);
+  }
   const loading = ref<boolean>(false);
   function send() {
     loading.value = true;
@@ -49,5 +53,5 @@ export const useSendMail = () => {
       loading.value = false;
     });
   }
-  return { inputForm, send, loading }
+  return { inputForm, send, loading, validMail }
 }
