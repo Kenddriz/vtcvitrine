@@ -8,8 +8,9 @@ export default defineComponent({
   name: 'App'
 })
 </script>
-<style lang="scss">
+<style>
  body {
-   font-size: 12px;
+   font-family: "Blenda", Helvetica, Arial,sans-serif;
+   font-size: 15px;
  }
 </style>

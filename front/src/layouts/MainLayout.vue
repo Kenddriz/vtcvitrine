@@ -5,7 +5,7 @@
         <q-item>
           <q-item-section side avatar>
             <q-avatar>
-              <img alt="tropik vtc" src="images/logo.jpg">
+              <img alt="tropik vtc" src="images/logo.png">
             </q-avatar>
           </q-item-section>
           <q-item-section>
@@ -39,7 +39,7 @@
               <q-item class="q-pl-none">
                 <q-item-section side avatar>
                   <q-avatar>
-                    <img alt="tropik vtc" src="images/logo.jpg">
+                    <img alt="tropik vtc" src="images/logo.png">
                   </q-avatar>
                 </q-item-section>
                 <q-item-section>

@@ -9,14 +9,20 @@
         <DownloadLink />
       </q-card-actions>
     </q-card>
+    <div class="col-12 flex-center flex q-pt-lg">
+      <div style="max-width: 900px" class="q-px-sm">
+        <Description />
+      </div>
+      <q-separator style="width: calc(100% - 50px)" inset />
+    </div>
     <div style="max-width: 900px" class="col-12 margin-top q-px-sm">
       <div class="row justify-around items-center">
         <div class="col-xs-12 col-md-6">
           <div class="text-h6 text-warning">COMMANDER EN QUELQUES CLICS</div>
-          <h2 style="font-size: 12px; margin-bottom: -10px" class="q-mt-lg">
+          <h2 style="font-size: 14px; margin-bottom: -10px" class="q-mt-lg">
             Télécharger l'application <b>Tropik VTC</b>
           </h2>
-          <DownloadLink />
+          <!--<DownloadLink /> -->
         </div>
         <img class="col-xs-12 col-md-6" height="250" src="images/car1.jpg" />
       </div>
@@ -49,7 +55,7 @@
               </q-item-section>
             </q-item>
           </q-list>
-          <DownloadLink />
+          <!--<DownloadLink />-->
         </div>
       </div>
       <!--simple efficace-->
@@ -82,9 +88,9 @@
               <q-item-section>Notez votre course</q-item-section>
             </q-item>
           </q-list>
-          <DownloadLink />
+          <!--<DownloadLink />-->
         </div>
-        <q-img class="col-xs-12 col-md-6" height="250px" src="images/car4.jpg" />
+        <q-img class="col-xs-12 col-md-6" height="250px" src="images/car44.jpg" />
       </div>
 
       <!--Gammes -->
@@ -106,12 +112,12 @@
         transition-next="slide-left"
         @mouseenter="autoplay = false"
         @mouseleave="autoplay = true"
-        height="300px"
+        :height="`${$q.screen.gt.sm ? 400 : 300}px`"
         class="bg-warning q-mt-md"
         control-color="primary"
       >
         <q-carousel-slide
-          v-for="x in 4"
+          v-for="x in 5"
           :name="x"
           :img-src="`images/car${x + 2}.jpg`"
           :key="x"
@@ -125,9 +131,10 @@
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
 import DownloadLink from '../components/DownloadLink.vue';
+import Description from '../components/Description.vue';
 export default defineComponent({
   name: 'PageIndex',
-  components: { DownloadLink },
+  components: { DownloadLink, Description },
   setup() {
     return {
       slide: ref(1),
